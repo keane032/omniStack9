@@ -11,7 +11,7 @@ app.use(routes);
 
 mongoose.set('useFindAndModify', false);
 
-var mongoDB_URI = 'mongodb+srv://omnistack:omnistack@omnistack.rlkag.mongodb.net/semana09?retryWrites=true&w=majority';
+var mongoDB_URI = '';
 mongoose.connect(mongoDB_URI, {useNewUrlParser:true, useUnifiedTopology:true}).catch(err => console.log(err));
 
 var db = mongoose.connection;
